@@ -12,9 +12,9 @@ var manifest *model.Manifest
 
 const manifestStr = `
 {
-  "id": "com.mattermost.plugin-starter-template",
-  "name": "Plugin Starter Template",
-  "description": "This plugin serves as a starting point for writing a Mattermost plugin.",
+  "id": "il.co.nix.x",
+  "name": "NiX X Bot plugin",
+  "description": "bundle of features used by nix",
   "version": "0.1.0",
   "min_server_version": "5.12.0",
   "server": {

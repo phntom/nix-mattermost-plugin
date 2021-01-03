@@ -80,7 +80,7 @@ make deploy
 If developing a plugin with a webapp, watch for changes and deploy those automatically:
 ```
 export MM_SERVICESETTINGS_SITEURL=http://localhost:8065
-export MM_ADMIN_TOKEN=j44acwd8obn78cdcx7koid4jkr
+export MM_ADMIN_TOKEN=tca8rmjmiifx9dmnwwbgfpo55w
 make watch
 ```
 
@@ -88,6 +88,7 @@ make watch
 
 Alternatively, you can authenticate with the server's API with credentials:
 ```
+kubectl port-forward -n chat svc/mattermost-integ 8065:8065 &
 export MM_SERVICESETTINGS_SITEURL=http://localhost:8065
 export MM_ADMIN_USERNAME=admin
 export MM_ADMIN_PASSWORD=password
@@ -97,7 +98,7 @@ make deploy
 or with a [personal access token](https://docs.mattermost.com/developer/personal-access-tokens.html):
 ```
 export MM_SERVICESETTINGS_SITEURL=http://localhost:8065
-export MM_ADMIN_TOKEN=j44acwd8obn78cdcx7koid4jkr
+export MM_ADMIN_TOKEN=xxxxxxxxxxxxxxxxxxxxxxxxxx
 make deploy
 ```
 

@@ -1,0 +1,20 @@
+dist/
+
+build/bin/
+
+# Mac
+.DS_Store
+
+# VSCode
+.vscode/
+
+# Jetbrains
+.idea/
+
+.git
+
+.dockerignore
+
+Dockerfile
+
+build.bat
